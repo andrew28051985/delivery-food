@@ -70,11 +70,14 @@ body {
 	background-position: left 16px center;
 	padding-left: 36px;
 }
-.button-user {
+.button-user, .basket {
 	background: #1890FF;
 	color: #ffffff;
 	order: 1px solid #1890FF;
 	margin-right: 10px;
+}
+.button-basket {
+	margin-left: 10px;
 }
 .user-button-icon {
 	padding-right: 6px;
@@ -108,7 +111,6 @@ body {
 }
 .serch-hading {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 44px;
 }
@@ -119,6 +121,7 @@ body {
 	background-position: left 11px center;
 	padding: 5px 12px 5px 32px;
 	color: #BFBFBF;
+	margin-left: auto;
 }
 .serch-title {
 	margin: 0;
@@ -143,9 +146,14 @@ body {
 	overflow: hidden;
 	flex-basis: 30%;
 }
-.card-img {
-	width: 384px;
-	height: 250px;
+.link-resraurant {
+	text-decoration: none;
+}
+.card-img {	
+	object-fit: cover;
+}
+.card-img-restaurant {
+	max-width: 290px;
 	object-fit: cover;
 }
 .card-text {
@@ -165,6 +173,10 @@ body {
 	line-height: 32px;
 	color: #000000;
 }
+.card-name-regular {
+	font-size: 17px;
+	font-weight: 400;
+}
 .time {
 	font-style: normal;
 	font-weight: normal;
@@ -180,12 +192,31 @@ body {
 	align-items: center;
 	justify-content: start;
 }
-.price, .category, .rating {
+.card-info-heading {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-left: 30px;
+}
+.price, .category, .rating, .ingredients {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 32px;
 	color: #8C8C8C;
+}
+.ingredients {
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 24px;
+}
+.price-heading, .category-heading, .rating-heading {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+	color: #8C8C8C;
+	margin-right: 10px;
 }
 .rating {
 	color: #FFC107;
@@ -203,6 +234,14 @@ body {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-left: 10px;
+}
+.card-price {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 32px;
+	color: #000000;
+	margin-left: 30px;
 }
 
 .footer {
