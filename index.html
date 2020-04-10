@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Delivery food - сервис доставки еды</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<header class="header">
+		<header class="header wow fadeInDown" data-wow-delay=".8s">
 			<img src="img/logo.svg" alt="logo" class="logo-header">
 			<input type="text" class="input serch-input" placeholder="Адрес доставки">
 			<div class="buttons">
@@ -18,24 +19,24 @@
 					<span class="button-text">Войти</span>
 				</button>
 				<button class="button button-shopping-card">
-					<span class="button-text">Корзина</span>
+					<span class="button-text" id="card-button">Корзина</span>
 				</button>
 			</div>
 		</header>
 	</div>	
 	<main class="main">
 	<div class="container">
-		<section class="promo">
+		<section class="promo wow bounceInRight" data-wow-delay=".2s">
 			<h1 class="promo-heading">Онлайн-сервис <br /> доставки еды на дом</h1>
 			<p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
 		</section>
 		<section class="restaurants">
-			<div class="serch-hading">
+			<div class="serch-hading wow fadeInLeft" data-wow-delay=".8s">
 				<h2 class="serch-title">Рестораны</h2>
 				<input type="text" class="input serch-restaurants" placeholder="Поиск блюд и ресторанов">
 			</div>
 			<div class="cards">
-				<div class="card">
+				<div class="card wow fadeInUp" data-wow-delay=".2s">
 					<a href="restaurant.html" class="link-resraurant">
 						<img src="img/card-pizza-plus.jpg" alt="pizza" class="card-img">
 						<div class="card-text">
@@ -59,7 +60,7 @@
 				</div>
 				<!-- /.card -->
 				
-					<div class="card">
+					<div class="card wow fadeInUp" data-wow-delay=".4s">
 						<a href="restaurant.html" class="link-resraurant">
 							<img src="img/tanuki.jpg" alt="pizza" class="card-img">
 							<div class="card-text">
@@ -82,7 +83,7 @@
 						<!-- /.card-text -->
 					</div>				
 				<!-- /.card -->
-				<div class="card">
+				<div class="card wow fadeInUp" data-wow-delay=".6s">
 					<a href="restaurant.html" class="link-resraurant">
 						<img src="img/foodband.jpg" alt="pizza" class="card-img">
 						<div class="card-text">
@@ -105,7 +106,7 @@
 					</a>
 				</div>
 				<!-- /.card -->
-				<div class="card">
+				<div class="card wow fadeInUp" data-wow-delay=".3s">
 					<a href="restaurant.html" class="link-resraurant">
 						<img src="img/cormorant-pizza.jpg" alt="cormorant-pizza" class="card-img">
 						<div class="card-text">
@@ -128,7 +129,7 @@
 					</a>
 				</div>
 				<!-- /.card -->
-				<div class="card">
+				<div class="card wow fadeInUp" data-wow-delay=".5s">
 					<a href="restaurant.html" class="link-resraurant">
 						<img src="img/point-food.jpg" alt="point-food" class="card-img">
 						<div class="card-text">
@@ -151,7 +152,7 @@
 					</a>
 				</div>
 				<!-- /.card -->
-				<div class="card">
+				<div class="card wow fadeInUp" data-wow-delay=".9s">
 					<a href="restaurant.html" class="link-resraurant">
 						<img src="img/pizza-burger.jpg" alt="pizza-burger" class="card-img">
 						<div class="card-text">
@@ -184,9 +185,9 @@
 	</div>
 	</main>
 	<div class="container">	
-		<footer class="footer">
+		<footer class="footer wow bounceInUp" data-wow-delay=".3s">
 			
-				<img src="img/logo.svg" alt="logo" class="logo-footer">
+			<a href="index.html" class="link-index"><img src="img/logo.svg" alt="logo" class="logo-footer"></a>
 				<nav class="navigation">
 					<a href="#" class="link">Ресторанам</a>
 					<a href="#" class="link">Курьерам</a>
@@ -202,5 +203,61 @@
 		</footer>
 
 	</div>
+
+	<div class="modal">
+		<div class="modal-dialog wow rubberBand" data-wow-delay=".2s">
+			<div class="modal-header">
+				<h3 class="modal-title">Корзина</h3>
+				<button class="modal-button-close">&times;</button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-row">
+					<span class="modal-name">Ролл угорь стандарт</span>
+					<span class="modal-price">250 ₽</span>
+					<div class="modal-buttons">
+						<button class="modal-button">-</button>
+						<span class="modal-number">1</span>
+						<button class="modal-button">+</button>
+					</div>
+				</div>
+				<div class="modal-row">
+					<span class="modal-name">Калифорния ласось стандарт</span>
+					<span class="modal-price">395 ₽</span>
+					<div class="modal-buttons">
+						<button class="modal-button">-</button>
+						<span class="modal-number">2</span>
+						<button class="modal-button">+</button>
+					</div>
+				</div>
+				<div class="modal-row">
+					<span class="modal-name">Ролл угорь стандарт</span>
+					<span class="modal-price">250 ₽</span>
+					<div class="modal-buttons">
+						<button class="modal-button">-</button>
+						<span class="modal-number">1</span>
+						<button class="modal-button">+</button>
+					</div>
+				</div>
+				<div class="modal-row">
+					<span class="modal-name">Ролл угорь стандарт</span>
+					<span class="modal-price">250 ₽</span>
+					<div class="modal-buttons">
+						<button class="modal-button">-</button>
+						<span class="modal-number">1</span>
+						<button class="modal-button">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<span class="modal-tag">1540 ₽</span>
+				<button class="button modal-order">Оформить заказ</button>
+				<button class="button modal-cancel">Отмена</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
